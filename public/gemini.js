@@ -1,6 +1,6 @@
 const sendButton = document.getElementById('send-button');
 const userInput = document.getElementById('user-input');
-const chatLog = document.getElementById('chat-log'); // Assuming you have an element with the ID 'chat-log'
+const chatLog = document.getElementById('chat-log'); 
 
 sendButton.addEventListener('click', async function () {
   const prompt = userInput.value;
