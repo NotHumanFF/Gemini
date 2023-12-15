@@ -26,7 +26,7 @@ app.post("/generate", async function (req, res) {
     res.send({ response: text });
   } catch (error) {
     console.error("Error generating content:", error);
-    res.status(500).send("Internal Server Error");
+    res.status(500).send("Internal Server");
   }
 });
 
