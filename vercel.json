@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js", // Change this to your entry file
+      "use": "@now/node" // Specifies that this is a Node.js serverless function
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/server.js" // Change this to your entry file
+    }
+  ]
+}
