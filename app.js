@@ -11,7 +11,6 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + "/index.html");
 });
 
-
 app.post("/generate", async function (req, res) {
   const { userInput } = req.body;
   try {
