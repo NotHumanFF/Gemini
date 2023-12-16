@@ -14,7 +14,6 @@ app.get("/", function (req, res) {
 
 app.post("/generate", async function (req, res) {
   const { userInput } = req.body;
-
   try {
     const genAI = new GoogleGenerativeAI('');
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
